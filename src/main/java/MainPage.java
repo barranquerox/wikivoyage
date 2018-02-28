@@ -44,10 +44,10 @@ public class MainPage {
         spanishLink.click();
     }
 
-    public HomePage search(String search)
+    public DestinationPage search(String search)
     {
         searchInput.sendKeys(search);
         searchButton.click();
-        return new HomePage(driver);
+        return new DestinationPage(driver);
     }
 }

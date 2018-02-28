@@ -20,7 +20,7 @@ public class WikiTests {
     public void test1()
     {
         MainPage mainPage = new MainPage(driver);
-        mainPage.openSpanishHomePage();
+        mainPage.search("Paris");
     }
 
     @Test
