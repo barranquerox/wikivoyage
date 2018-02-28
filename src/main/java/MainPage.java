@@ -28,10 +28,9 @@ public class MainPage {
         this.driver = driver;
     }
 
-    public HomePage openEnglishHomePage()
+    public void openEnglishHomePage()
     {
         englishLink.click();
-        return new HomePage(driver);
     }
 
     public HomePage openFrenchHomePage()
@@ -40,10 +39,9 @@ public class MainPage {
         return new HomePage(driver);
     }
 
-    public HomePage openSpanishHomePage()
+    public void openSpanishHomePage()
     {
-        frenchLink.click();
-        return new HomePage(driver);
+        spanishLink.click();
     }
 
     public HomePage search(String search)

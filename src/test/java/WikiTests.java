@@ -19,7 +19,8 @@ public class WikiTests {
     @Test
     public void test1()
     {
-
+        MainPage mainPage = new MainPage(driver);
+        mainPage.openSpanishHomePage();
     }
 
     @Test
@@ -37,6 +38,6 @@ public class WikiTests {
     @After
     public void quit()
     {
-
+        driver.quit();
     }
 }
