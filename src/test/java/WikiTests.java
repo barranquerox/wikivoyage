@@ -50,7 +50,7 @@ public class WikiTests {
     public void test5()
     {
         MainPage mainPage = new MainPage(driver);
-        mainPage.search("Paris")
+                mainPage.search("Paris")
                 .header.search("Lyon")
                 .header.search("Madrid")
                 .navigationPanel.goToHomePage();
