@@ -13,6 +13,7 @@ public class WikiTests {
     {
         driver = new ChromeDriver();
         driver.get("https://www.wikivoyage.org/");
+        driver.manage().window().maximize();
     }
 
     @Test

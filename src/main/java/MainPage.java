@@ -5,6 +5,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
 
+    WebDriver driver;
+
     @FindBy(id = "searchInput")
     private WebElement searchInput;
 
@@ -23,5 +25,31 @@ public class MainPage {
     public MainPage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
+        this.driver = driver;
+    }
+
+    public HomePage openEnglishHomePage()
+    {
+        englishLink.click();
+        return new HomePage(driver);
+    }
+
+    public HomePage openFrenchHomePage()
+    {
+        frenchLink.click();
+        return new HomePage(driver);
+    }
+
+    public HomePage openSpanishHomePage()
+    {
+        frenchLink.click();
+        return new HomePage(driver);
+    }
+
+    public HomePage search(String search)
+    {
+        searchInput.sendKeys(search);
+        searchButton.click();
+        return new HomePage(driver);
     }
 }
