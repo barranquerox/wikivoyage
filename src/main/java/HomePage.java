@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     public NavigationPanel navigationPanel;
     public Header header;

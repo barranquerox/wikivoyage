@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Header {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(id = "searchInput")
     private WebElement searchInput;

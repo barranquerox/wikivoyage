@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @FindBy(id = "searchInput")
     private WebElement searchInput;

@@ -20,7 +20,11 @@ public class WikiTests {
     public void test1()
     {
         MainPage mainPage = new MainPage(driver);
-        mainPage.search("Paris");
+        mainPage.search("Paris")
+                .header.search("Lyon")
+                .navigationPanel.goToHomePage()
+                .header.search("Venezuela")
+                .navigationPanel.goToHelp();
     }
 
     @Test

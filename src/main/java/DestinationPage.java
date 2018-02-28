@@ -7,22 +7,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DestinationPage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     public NavigationPanel navigationPanel;
     public Header header;
 
     @FindBy(id = "Comprendre")
     private WebElement comprendreTitre;
-
-    @FindBy(id = "Faire")
-    private WebElement faireTitre;
-
-    @FindBy(id = "Aller")
-    private WebElement allerTitre;
-
-    @FindBy(id = "Circuler")
-    private WebElement circulerTitre;
 
     public DestinationPage(WebDriver driver)
     {
@@ -34,8 +25,5 @@ public class DestinationPage {
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(comprendreTitre));
-        wait.until(ExpectedConditions.visibilityOf(faireTitre));
-        wait.until(ExpectedConditions.visibilityOf(allerTitre));
-        wait.until(ExpectedConditions.visibilityOf(circulerTitre));
     }
 }
